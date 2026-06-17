@@ -11,7 +11,7 @@ export class FunctionCallOnButtonClick {
   test : string = "working!";
   
   helloWorld() {
-    console.log("Hello World!!")
+    console.log("Hello World!! " + this.test)
   }
 
   handleClick () {
