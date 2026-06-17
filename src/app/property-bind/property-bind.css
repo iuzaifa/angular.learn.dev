@@ -1,0 +1,15 @@
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.active-status {
+    background : rebeccapurple;
+    color : white
+}
+
+.tt {
+    background: red;
+    color : black;
+}

@@ -1,0 +1,11 @@
+<p>property-bind works!</p>
+<img [src]="imagesrc" alt="">
+<br>
+<input type="text" name="" id="" [value]="username">
+<button type="button" [disabled]="isDisable">Submit</button>
+
+<div [class.active-status]="isActive">status</div>
+
+<div class="tt" [style.width.px]="boxWidth">{{boxWidth}}</div>
+<div [style.background-color]="bgColor">Box-Width</div>
+<p [innerHTML]="`Count: ` + count()" ></p>
