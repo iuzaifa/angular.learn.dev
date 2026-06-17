@@ -9,8 +9,8 @@ import { EventBinding } from './event-binding/event-binding';
 
 @Component({
   selector: 'app-root',
-  // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind],
-  imports: [RouterOutlet, EventBinding ],
+  // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding],
+  imports: [RouterOutlet ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
