@@ -1,0 +1,17 @@
+<p>event-binding works!</p>
+<button (click)="increment()">Click {{count}}</button>
+
+<br>
+
+<button (click)="showEvent($event)" >Show Events</button>
+<br>
+
+<input type="text" [value]="username" (input)="updateUsername($any($event.target).value)" placeholder="username">
+{{username}}
+
+<br>
+
+<form (submit)="handleSubmit($event); false">
+  <input placeholder="email">
+  <button type="submit">Submit</button>
+</form>
