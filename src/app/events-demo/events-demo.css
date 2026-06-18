@@ -1,0 +1,22 @@
+button {
+    width: 120px;
+    padding: 10px 4px 18px 4px;
+    background: linear-gradient(135deg, #000000, #434343);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.box-hover {
+    background: rebeccapurple;
+    width: 600px;
+    padding: 100px;
+    display : flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    color : white
+}

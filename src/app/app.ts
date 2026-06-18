@@ -7,13 +7,14 @@ import { InterpolationComponent } from './interpolation/interpolation';
 import { Login } from './components/login/login';
 import { PropertyBind } from './property-bind/property-bind';
 import { DataTypes } from './data-types/data-types';
+import { EventsDemo } from './events-demo/events-demo';
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
   // imports: [RouterOutlet, DataTypes],
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, EventsDemo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
