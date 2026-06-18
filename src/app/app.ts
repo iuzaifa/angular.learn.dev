@@ -18,8 +18,8 @@ import { ElseIfFlow } from "./else-if-flow/else-if-flow";
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle],
-  imports: [RouterOutlet, ElseIfFlow],
+  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
+  imports: [RouterOutlet, ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
