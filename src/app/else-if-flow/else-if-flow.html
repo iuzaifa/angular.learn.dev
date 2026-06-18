@@ -1,0 +1,116 @@
+<p>else-if-flow works!</p>
+
+@if (status === "processing") {
+    order in processing
+}@else if (status === "completed") {
+    order completed
+}@else if (status === "pending") {
+    order in pending
+}@else if (status === "shipped"){
+    order shipped
+}@else {
+    not tracked
+}
+
+@if (marks > 100 || marks < 0) {
+    <p>Invalid Marks</p>
+} @else if (marks >= 90) {
+    <p>Grade A+</p>
+} @else if (marks >= 80) {
+    <p>Grade A</p>
+} @else if (marks >= 70) {
+    <p>Grade B</p>
+} @else if (marks >= 60) {
+    <p>Grade C</p>
+} @else {
+    <p>Grade D</p>
+}
+
+<input type="number" (input)="updateAge($event.target.valueAsNumber)">
+
+@if (age > 120 || age < 0) {
+    <p>Invalid Age</p>
+} @else if (age >= 60) {
+    <p>Senior Citizen</p>
+} @else if (age >= 18) {
+    <p>Adult</p>
+} @else if (age >= 13) {
+    <p>Teenager</p>
+} @else {
+    <p>Child</p>
+}
+
+<button (click)="updateSection='home'">Home</button>
+<button (click)="updateSection='about'">About</button>
+<button (click)="updateSection='contact'">Contact</button>
+
+<!-- @if (updateSection === "home") {
+    <section></section>
+}@else if (updateSection === "about"){
+    <h2>Wellcome to About</h2>
+}@else if (updateSection === "contact"){
+    <h2>Wellcome to Contact</h2>
+}@else{
+    <h2>No section found</h2>
+} -->
+
+<div class="container">
+
+  <div class="nav">
+    <button (click)="updateSection='home'">Home</button>
+    <button (click)="updateSection='about'">About</button>
+    <button (click)="updateSection='contact'">Contact</button>
+  </div>
+
+  @if (updateSection === 'home') {
+
+    <section class="card">
+      <img
+        src="https://picsum.photos/900/400"
+        alt="Home Banner"
+      />
+      <h2>Welcome to Home</h2>
+      <p>
+        Learn Angular Control Flow with beautiful examples and modern UI.
+      </p>
+    </section>
+
+  } @else if (updateSection === 'about') {
+
+    <section class="card">
+      <img
+        src="https://picsum.photos/900/401"
+        alt="About Banner"
+      />
+      <h2>About Us</h2>
+      <p>
+        This section demonstrates Angular's new if and else control flow.
+      </p>
+    </section>
+
+  } @else if (updateSection === 'contact') {
+
+    <section class="card">
+      <img
+        src="https://picsum.photos/900/402"
+        alt="Contact Banner"
+      />
+      <h2>Contact Us</h2>
+      <p>
+        Feel free to reach out for Angular, Java, and Full Stack discussions.
+      </p>
+    </section>
+
+  } @else {
+
+    <section class="card">
+      <h2>No Section Found</h2>
+      <p>Please select a valid section.</p>
+    </section>
+
+  }
+
+</div>
+
+
+
