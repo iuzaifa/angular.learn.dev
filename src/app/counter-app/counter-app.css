@@ -1,0 +1,47 @@
+.counter-container {
+  text-align: center;
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.counter-value {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* Button colors */
+.increase {
+  background: #28a745;
+  color: white;
+}
+
+.decrease {
+  background: #dc3545;
+  color: white;
+}
+
+.reset {
+  background: #343a40;
+  color: white;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

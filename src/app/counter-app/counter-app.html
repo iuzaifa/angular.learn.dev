@@ -1,0 +1,15 @@
+<div class="counter-container">
+  <h1>Counter App</h1>
+
+  <h2 class="counter-value">{{ counter }}</h2>
+
+  <div class="btn-group">
+    <!-- <button class="btn increase" (click)="handleIncrement()">+</button>
+    <button class="btn decrease" (click)="handleDecrement()">-</button>
+    <button class="btn reset" (click)="handleReset()">Reset</button> -->
+
+    <button class="btn increase" (click)="handelCounter('increase')">+</button>
+    <button class="btn decrease" (click)="handelCounter('decrease')">-</button>
+    <button class="btn reset" (click)="handelCounter('reset')">Reset</button>
+  </div>
+</div>
