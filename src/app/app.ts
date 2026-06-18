@@ -12,7 +12,8 @@ import { DataTypes } from './data-types/data-types';
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-  imports: [RouterOutlet, DataTypes],
+  // imports: [RouterOutlet, DataTypes],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
