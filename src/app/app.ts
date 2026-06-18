@@ -11,13 +11,14 @@ import { RouterOutlet } from '@angular/router';
 import { CounterApp } from './counter-app/counter-app';
 import { GetSetValue } from './get-set-value/get-set-value';
 import { AngularStyling } from './angular-styling/angular-styling';
+import { IfElseFlowHideShowToggle } from './if-else-flow-hide-show-toggle/if-else-flow-hide-show-toggle';
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue],
-  imports: [RouterOutlet, AngularStyling],
+  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling],
+  imports: [RouterOutlet, IfElseFlowHideShowToggle],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

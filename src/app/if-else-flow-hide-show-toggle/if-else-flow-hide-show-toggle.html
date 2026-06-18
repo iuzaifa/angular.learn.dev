@@ -1,0 +1,21 @@
+<p>if-else-flow-hide-show-toggle works!</p>
+@if (isLoggedIn) {
+    <h1>User Logged in </h1>
+}@else {
+    <h2>Please Logged in</h2>
+}
+
+
+@if (marks >= 50) {
+    <h1>pass</h1>
+}@else { 
+    <h1>fail</h1>
+}
+
+<button (click)="handleToggle()">Show Toggle </button>
+
+@if (toggle) {
+    <div >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium eaque deserunt doloremque vitae laborum alias eligendi cumque voluptas, odio sapiente impedit totam. Repudiandae, earum. A, consequatur. Voluptate, iure doloremque.
+    </div>
+}

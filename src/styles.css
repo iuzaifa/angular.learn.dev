@@ -1,5 +1,9 @@
 
 body{
     background:#202020;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* You can add global styles to this file, and also import other style files */
+p {
+    font-size: 16px;
+}
