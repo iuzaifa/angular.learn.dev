@@ -1,0 +1,15 @@
+<p>get-set-value works!</p>
+
+<p>Name: {{name}}</p>
+
+<input placeholder="Enter name" (input)="update($event.target.value)">
+
+<br>
+<br>
+
+<p>City name : {{city}}</p>
+<input type="text" placeholder="enter city" (input)="city=$event.target.value">
+
+<p>Email: {{email}}</p>
+<input #userImput type="text">
+<button (click)="getEmail(userImput.value)"  >submit</button>

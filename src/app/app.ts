@@ -9,13 +9,14 @@ import { RouterOutlet } from '@angular/router';
 // import { DataTypes } from './data-types/data-types';
 // import { EventsDemo } from './events-demo/events-demo';
 import { CounterApp } from './counter-app/counter-app';
+import { GetSetValue } from './get-set-value/get-set-value';
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-  // imports: [RouterOutlet, DataTypes, EventsDemo],
-  imports: [RouterOutlet, CounterApp],
+  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp],
+  imports: [RouterOutlet, GetSetValue],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
