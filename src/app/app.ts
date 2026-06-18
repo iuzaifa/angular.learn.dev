@@ -6,12 +6,13 @@ import { Signin } from "./components/signin/Signin";
 import { InterpolationComponent } from './interpolation/interpolation';
 import { Login } from './components/login/login';
 import { PropertyBind } from './property-bind/property-bind';
+import { DataTypes } from './data-types/data-types';
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DataTypes],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
