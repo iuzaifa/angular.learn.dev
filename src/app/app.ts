@@ -14,18 +14,16 @@ import { RouterOutlet } from '@angular/router';
 // import { IfElseFlowHideShowToggle } from './if-else-flow-hide-show-toggle/if-else-flow-hide-show-toggle';
 // import { ElseIfFlow } from "./else-if-flow/else-if-flow";
 import { SwitchCase } from "./switch-case/switch-case";
+import { AngularLoops } from "./angular-loops/angular-loops";
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
-<<<<<<< HEAD
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
-  imports: [RouterOutlet, ],
-=======
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
-  imports: [RouterOutlet, SwitchCase],
->>>>>>> topic/angular-switch-case
+  // imports: [RouterOutlet, SwitchCase],
+  imports: [RouterOutlet, AngularLoops],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

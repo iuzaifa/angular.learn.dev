@@ -1,0 +1,38 @@
+<p>angular-loops works!</p>
+
+
+@for (item of items; track $index) {
+    <p>{{$index+1}}. {{item}}</p>
+}
+
+
+@for (item of fruits; track $index; let i = $index) {
+    <div class="list">
+        <p>{{item}}</p>
+        <div>
+            <button (click)="handleRemoveItem(i)">Remove</button>
+        </div>
+    </div>
+    
+
+}
+
+@for (n of numberslist; track $index) {
+    <div class="list">
+        <p>{{n % 2 == 0 ? "Even : " +n : "odd : " +n}}</p>
+    </div>
+}
+
+<div class="users-container">
+  @for (u of users; track $index) {
+    <div class="card">
+      <div class="avatar">👤</div>
+      <h2>{{ u.name }}</h2>
+      <p>📧 {{ u.email }}</p>
+      <p>🎂 Age: {{ u.age }}</p>
+      <p>📍 {{ u.address }}</p>
+      <button>View Profile</button>
+     <button (click)="handleRemoveCard($index)">Remove</button>
+    </div>
+  }
+</div>
