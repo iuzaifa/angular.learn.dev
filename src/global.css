@@ -1,0 +1,17 @@
+body {
+    color: whitesmoke;
+}
+
+p {
+    font-size: 14px;
+}
+.test-css {
+    width : 50%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color :rebeccapurple;
+}
+    
