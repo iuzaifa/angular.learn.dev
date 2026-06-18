@@ -8,18 +8,24 @@ import { RouterOutlet } from '@angular/router';
 // import { PropertyBind } from './property-bind/property-bind';
 // import { DataTypes } from './data-types/data-types';
 // import { EventsDemo } from './events-demo/events-demo';
-import { CounterApp } from './counter-app/counter-app';
-import { GetSetValue } from './get-set-value/get-set-value';
-import { AngularStyling } from './angular-styling/angular-styling';
-import { IfElseFlowHideShowToggle } from './if-else-flow-hide-show-toggle/if-else-flow-hide-show-toggle';
-import { ElseIfFlow } from "./else-if-flow/else-if-flow";
+// import { CounterApp } from './counter-app/counter-app';
+// import { GetSetValue } from './get-set-value/get-set-value';
+// import { AngularStyling } from './angular-styling/angular-styling';
+// import { IfElseFlowHideShowToggle } from './if-else-flow-hide-show-toggle/if-else-flow-hide-show-toggle';
+// import { ElseIfFlow } from "./else-if-flow/else-if-flow";
+import { SwitchCase } from "./switch-case/switch-case";
 
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
+<<<<<<< HEAD
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   imports: [RouterOutlet, ],
+=======
+  // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
+  imports: [RouterOutlet, SwitchCase],
+>>>>>>> topic/angular-switch-case
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

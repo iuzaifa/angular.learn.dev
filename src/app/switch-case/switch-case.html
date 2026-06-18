@@ -1,0 +1,191 @@
+<p>switch-case works!</p>
+
+
+<!-- <button (click)="tab='home'">Home</button>
+<button (click)="tab='about'">About</button>
+<button (click)="tab='contact'">Contact</button>
+
+@switch (tab) {
+    @case ('home') {
+        <p>home page</p>
+    }
+    @case ('contact') {
+        <p>contact page</p>
+    }
+    @case ('about') {
+        <p>About Page</p>
+    }
+    @default {
+        <p>Page not found</p>
+    }
+} -->
+
+
+<!-- <input type="text" placeholder="Enter Fruit and Veg name" (input)="undateCategories($event.target.value)">
+
+@switch (categories) {
+    @case ('apple') {
+        <p>apple is  a fruit</p>
+    }
+    @case ('mango') {
+        <p>mango is  a fruit</p>
+    }
+    @case ('lichi') {
+        <p>lichi is a fruit</p>
+    }
+    @case ('tomato') {
+        <p>tomato is Veg..</p>
+    }
+    @case ('pea') {
+        <p>pea is Veg..</p>
+    }
+    @default {
+        <p>case not found</p>
+    }
+} -->
+
+
+
+<input
+  type="text"
+  placeholder="Enter Fruit or Vegetable Name"
+  (input)="undateCategories($any($event.target).value.toLowerCase().trim())"
+/>
+
+@switch (categories) {
+
+  <!-- Fruits -->
+  @case ('apple') {
+    <p>🍎 Apple is a Fruit</p>
+  }
+
+  @case ('mango') {
+    <p>🥭 Mango is the King of Fruits 👑</p>
+  }
+
+  @case ('banana') {
+    <p>🍌 Banana is a Fruit and a great energy booster ⚡</p>
+  }
+
+  @case ('orange') {
+    <p>🍊 Orange is a Fruit rich in Vitamin C 💪</p>
+  }
+
+  @case ('grapes') {
+    <p>🍇 Grapes are Fruits and can be used to make juice 🍷</p>
+  }
+
+  @case ('watermelon') {
+    <p>🍉 Watermelon is a refreshing Fruit for summer ☀️</p>
+  }
+
+  @case ('lichi') {
+    <p>🍒 Lichi is a sweet and juicy Fruit 😋</p>
+  }
+
+  <!-- Vegetables -->
+  @case ('tomato') {
+    <p>🍅 Tomato is commonly used as a Vegetable 🥗</p>
+  }
+
+  @case ('potato') {
+    <p>🥔 Potato is a Vegetable loved worldwide 🌎</p>
+  }
+
+  @case ('pea') {
+    <p>🟢 Pea is a Vegetable rich in nutrients 🌱</p>
+  }
+
+  @case ('carrot') {
+    <p>🥕 Carrot is a Vegetable good for eyesight 👀</p>
+  }
+
+  @case ('onion') {
+    <p>🧅 Onion is a Vegetable used in many dishes 🍛</p>
+  }
+
+  @case ('cabbage') {
+    <p>🥬 Cabbage is a leafy Vegetable 🌿</p>
+  }
+
+  @case ('spinach') {
+    <p>🌿 Spinach is a healthy green Vegetable 💚</p>
+  }
+
+  <!-- Fun Cases -->
+  @case ('pizza') {
+    <p>🍕 Pizza is neither a Fruit nor a Vegetable 😄</p>
+  }
+
+  @case ('burger') {
+    <p>🍔 Burger belongs to the Fast Food category 🚀</p>
+  }
+
+  @case ('icecream') {
+    <p>🍨 Ice Cream is a Dessert 😋</p>
+  }
+
+  @default {
+    <div class="not-found">
+      <h3>❓ Category Not Found</h3>
+      <p>Try one of these:</p>
+
+      <p>
+        🍎 Apple | 🥭 Mango | 🍌 Banana | 🍊 Orange |
+        🍇 Grapes | 🍉 Watermelon
+      </p>
+
+      <p>
+        🍅 Tomato | 🥔 Potato | 🥕 Carrot |
+        🧅 Onion | 🥬 Cabbage | 🌿 Spinach
+      </p>
+    </div>
+  }
+
+}
+
+
+
+
+<div class="nav">
+  <button (click)="tab='home'">Home</button>
+  <button (click)="tab='about'">About</button>
+  <button (click)="tab='contact'">Contact</button>
+</div>
+
+
+
+@switch (tab) {
+
+  @case ('home') {
+    <div class="card">
+      <img src="https://picsum.photos/900/400" alt="Home">
+      <h2>Home Page</h2>
+      <p>Welcome to our Angular learning application.</p>
+    </div>
+  }
+
+  @case ('about') {
+    <div class="card">
+      <img src="https://picsum.photos/900/401" alt="About">
+      <h2>About Page</h2>
+      <p>Learn Angular's new Control Flow syntax introduced in modern Angular.</p>
+    </div>
+  }
+
+  @case ('contact') {
+    <div class="card">
+      <img src="https://picsum.photos/900/402" alt="Contact">
+      <h2>Contact Page</h2>
+      <p>Reach out for Angular, Java Full Stack, and development discussions.</p>
+    </div>
+  }
+
+  @default {
+    <div class="card">
+      <h2>Page Not Found</h2>
+      <p>Please select a valid page.</p>
+    </div>
+  }
+
+}
