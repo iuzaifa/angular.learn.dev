@@ -15,6 +15,7 @@ import { RouterOutlet } from '@angular/router';
 // import { ElseIfFlow } from "./else-if-flow/else-if-flow";
 import { SwitchCase } from "./switch-case/switch-case";
 import { AngularLoops } from "./angular-loops/angular-loops";
+import { AngularLoopContextualVars } from "./angular-loop-contextual-vars/angular-loop-contextual-vars";
 
 
 @Component({
@@ -22,8 +23,8 @@ import { AngularLoops } from "./angular-loops/angular-loops";
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
-  // imports: [RouterOutlet, SwitchCase],
-  imports: [RouterOutlet, AngularLoops],
+  // imports: [RouterOutlet, SwitchCase, AngularLoops],
+  imports: [RouterOutlet, AngularLoopContextualVars],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
