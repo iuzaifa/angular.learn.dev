@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
+import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
 // import { AngularSignals } from "./angular-signals/angular-signals";
 // import { EventBinding } from './event-binding/event-binding';
 // import { FunctionCallOnButtonClick } from './function-call-on-button-click/function-call-on-button-click';
@@ -25,8 +26,8 @@ import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
-  // imports: [RouterOutlet, SwitchCase, AngularLoops, AngularLoopContextualVars, AngularSignals],
-  imports: [RouterOutlet, SignalDatatypes],
+  // imports: [RouterOutlet, SwitchCase, AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes],
+  imports: [RouterOutlet, AngularComputedSignals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

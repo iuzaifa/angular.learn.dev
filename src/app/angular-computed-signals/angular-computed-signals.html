@@ -1,0 +1,15 @@
+<p>angular-computed-signals works!</p>
+
+
+<p>Count: {{count()}}</p>
+<p>Double Count: {{doubleCount()}}</p>
+
+<h2>Full Name: {{fullName()}}</h2>
+
+<h1>Array  Total: {{total()}}</h1>
+<h1>User Count : {{userCount()}}</h1>
+
+@for (item of filterUsers(); track $index) {
+    <p>{{item.name}}</p>
+}
+
