@@ -1,0 +1,29 @@
+
+
+<h2>Angular Signals</h2>
+
+<h3>Call Signal: {{count()}}</h3>
+<h3>Call Normal Value: {{value}}</h3>
+
+<button (click)="increment()" >Change Signal Value</button>
+
+<p>{{name()}}</p>
+<button (click)="updateName()">change</button>
+
+
+<!-- <input #langInput type="add new Language" (input)="newLanguage" >
+<button (click)="addlanguages(langInput.value); langInput.value=''">Add New Language</button>
+
+@for (item of languages(); track $index) {
+    <p>{{item}}</p>
+} -->
+
+    <br>
+    <br>
+
+@for (nums of numbers(); track $index) {
+    <strong>{{nums}}, </strong>
+}
+
+<input #newnums type="number" placeholder="new number" (input)="newNum">
+<button (click)="updateNumbers(newnums.valueAsNumber); newnums.value='newNum'" >Add num</button>
