@@ -1,0 +1,55 @@
+<p>signal-datatypes works!</p>
+
+<p>{{num()}}</p>
+<p>{{name()}}</p>
+<p>{{isAdmin()}}</p>
+
+@for (n of nums(); track $index) {
+    <strong>{{n}},    </strong>
+}
+
+<button (click)="setNums()" >set nums</button>
+<button (click)="updateNums()" >update nums</button>
+
+@for (nme of names(); track $index) {
+    <p>{{nme}}</p>
+}
+
+<div class="card">
+<p>{{user().name}}</p>
+<p>{{user().email}}</p>
+<p>{{user().age}}</p>
+</div>
+
+
+@for (i of users(); track $index) {
+    <div class="card2">
+        <p>{{i.name}}</p>
+        <p>{{i.email}}</p>
+        <p>{{i.age}}</p>
+    </div>
+
+}
+
+    <h3>{{ userlist().name }}</h3>
+    <p>Username: {{ userlist().username }}</p>
+    <p>Email: {{ userlist().email }}</p>
+    <p>Address: {{ userlist().address }}</p>
+    <p>Phone: {{ userlist().phone }}</p>
+    <p>Pincode: {{ userlist().pincode }}</p>
+    <hr>
+
+@for (user of userlists(); track $index) {
+  <div>
+    <h3>{{ user.name }}</h3>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Address: {{ user.address }}</p>
+    <p>Phone: {{ user.phone }}</p>
+    <p>Pincode: {{ user.pincode }}</p>
+    <hr>
+  </div>
+}
+
+
+
