@@ -1,0 +1,44 @@
+<!-- <p>angular-pipes works!</p>
+
+
+<p>{{ 'abu huzaifa' | uppercase }}</p>
+<p>{{ 'ABU HUZAIFA' | lowercase }}</p>
+<p>{{fname | uppercase}}</p>
+
+
+<p>{{ today | date }}</p>
+<p>{{ today | date:'short' }}</p>
+<p>{{ today | date:'dd/MM/yyyy' }}</p>
+
+
+<p>{{ 50000 | currency }}</p>
+<p>{{ 50000 | currency:'INR' }}</p>
+<p>{{ 50000 | currency:'USD' }}</p>
+<p>{{ 50000 | currency:'EUR' }}</p>
+
+
+
+<p>{{ 0.75 | percent }}</p>
+<p>{{ 1234.5678 | number:'1.2-2' }}</p>
+
+<p>{{ 'Angular' | slice:0:4 }}</p>
+
+<p>{{ fruits | slice:0:2 }}</p>
+
+<pre>{{ user | json }}</pre>
+
+<p>{{ 'abu huzaifa' | uppercase | slice:0:7 }}</p>
+
+<p>{{ 'd' | stringLength}}</p>
+ -->
+
+<h2> short name : {{name | shortName}}</h2>
+<h2> short name : {{"Malik Huzafia" | shortName}}</h2>
+
+<p>usd to inr : {{ usd | curencyConvert:usdToInr | currency:'INR'}}</p>
+
+<p>inr to usd : {{ inr | curencyConvert:(1 / usdToInr) | currency}}</p>
+
+
+<input type="text" (input)="searchQuery" placeholder="search ....." >
+

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
 import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
 import { AngularEffect } from "./angular-effect/angular-effect";
+import { AngularPipes } from "./angular-pipes/angular-pipes";
 // import { AngularSignals } from "./angular-signals/angular-signals";
 // import { EventBinding } from './event-binding/event-binding';
 // import { FunctionCallOnButtonClick } from './function-call-on-button-click/function-call-on-button-click';
@@ -27,8 +28,8 @@ import { AngularEffect } from "./angular-effect/angular-effect";
   // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
-  // imports: [RouterOutlet, SwitchCase, AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals],
-  imports: [RouterOutlet, AngularEffect],
+  // imports: [RouterOutlet, SwitchCase, AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
+  imports: [RouterOutlet, AngularPipes],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
