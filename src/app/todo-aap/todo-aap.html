@@ -1,0 +1,38 @@
+<p>todo-aap works!</p>
+
+
+<input [value]="newtask()" (input)="newtask.set($event.target.value)" placeholder="add something" >
+<button (click)="addNewTodo()">add new</button>
+
+<table class="todo-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (item of todos(); track $index) {
+        <tr>
+            <td>{{ $index + 1 }}</td>
+            <td>{{ item.task }}</td>
+
+            <td>
+                <span
+                    (click)="toggleTodo($index)"
+                    [style.text-decoration]="item.isActive ? 'line-through' : 'none' "
+                   >
+                    {{ item.isActive ? 'Complete ' : 'Complete Not' }}
+                </span>
+            </td>
+
+            <td>
+                <button (click)="deleteTodo($index)" class="delete-btn">Delete</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

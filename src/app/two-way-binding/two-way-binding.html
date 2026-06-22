@@ -1,0 +1,40 @@
+<p>two-way-binding works!</p>
+
+<div style="padding: 20px; font-family: sans-serif;">
+  <h2>Angular Two-Way Binding Example</h2>
+
+  <label for="username">Enter Name: </label>
+  <input type="text" id="username" [(ngModel)]="username" placeholder="Type something..." />
+
+  <hr />
+
+  <p>Hello, <strong>{{ username }}</strong>!</p>
+</div>
+
+<div style="padding: 20px; font-family: Arial, sans-serif; max-width: 500px;">
+  <h2>Example 2: Live Style & Content Controller</h2>
+
+  <div style="margin-bottom: 10px;">
+    <label>Change Card Text: </label>
+    <input type="text" [(ngModel)]="cardText" style="width: 100%; padding: 5px;" />
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label>Choose Background Color: </label>
+    <input type="color" [(ngModel)]="bgColor" />
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label>Choose Text Color: </label>
+    <input type="color" [(ngModel)]="textColor" />
+  </div>
+
+  <hr />
+
+  <h3>Live Preview Box:</h3>
+  <div [style.background]="bgColor" 
+       [style.color]="textColor" 
+       style="padding: 30px; border-radius: 8px; text-align: center; font-size: 20px; font-weight: bold; transition: all 0.3s ease;">
+    {{ cardText }}
+  </div>
+</div>

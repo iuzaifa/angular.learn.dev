@@ -32,13 +32,5 @@ export class AngularPipes {
   usdToInr: number = 95; // rate 
 
 
-  searchQuery: string = '';
-
-  products = [
-    { name: 'Apple iPhone', price: 999 },
-    { name: 'Samsung Galaxy', price: 899 },
-    { name: 'Google Pixel', price: 799 },
-    { name: 'Sony Headphones', price: 299 }
-  ];
 
 }
