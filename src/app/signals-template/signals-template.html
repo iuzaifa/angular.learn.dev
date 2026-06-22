@@ -1,0 +1,31 @@
+<p>signals-template works!</p>
+
+<p>{{count()}}</p>
+
+@if (isSignup()) {
+    <p>User Wellcome Angular !! </p>
+}@else {
+    <p> Please Login  </p>
+}
+
+<button (click)="isSignup.set(false)">Logout</button>
+<button (click)="isSignup.set(true)">Login</button>
+
+
+<hr>
+
+
+<button (click)="makeAdmin()">make admin</button>
+<button (click)="makeUaer()">make user</button>
+
+
+@if (role() === 'admin') {
+    <p>User Wellcome Angular !! </p>
+}@else {
+    <p> Please Login  </p>
+}
+
+
+@for (item of features(); track $index) {
+    <p>{{item}}</p>
+}

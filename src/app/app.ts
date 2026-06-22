@@ -7,6 +7,7 @@ import { AngularPipes } from "./angular-pipes/angular-pipes";
 import { SignalDe } from "./signal-de/signal-de";
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoAap } from "./todo-aap/todo-aap";
+import { SignalsTemplate } from "./signals-template/signals-template";
 // import { AngularSignals } from "./angular-signals/angular-signals";
 // import { EventBinding } from './event-binding/event-binding';
 // import { FunctionCallOnButtonClick } from './function-call-on-button-click/function-call-on-button-click';
@@ -32,8 +33,8 @@ import { TodoAap } from "./todo-aap/todo-aap";
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
-  // imports: [RouterOutlet,TwoWayBinding],
-  imports: [RouterOutlet, TodoAap],
+  // imports: [RouterOutlet,TwoWayBinding,TodoAap],
+  imports: [RouterOutlet, SignalsTemplate],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
