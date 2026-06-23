@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
-import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
-import { AngularEffect } from "./angular-effect/angular-effect";
-import { AngularPipes } from "./angular-pipes/angular-pipes";
-import { SignalDe } from "./signal-de/signal-de";
-import { TwoWayBinding } from './two-way-binding/two-way-binding';
-import { TodoAap } from "./todo-aap/todo-aap";
-import { SignalsTemplate } from "./signals-template/signals-template";
+// import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
+// import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
+// import { AngularEffect } from "./angular-effect/angular-effect";
+// import { AngularPipes } from "./angular-pipes/angular-pipes";
+// import { SignalDe } from "./signal-de/signal-de";
+// import { TwoWayBinding } from './two-way-binding/two-way-binding';
+// import { TodoAap } from "./todo-aap/todo-aap";
+// import { SignalsTemplate } from "./signals-template/signals-template";
 // import { AngularSignals } from "./angular-signals/angular-signals";
 // import { EventBinding } from './event-binding/event-binding';
 // import { FunctionCallOnButtonClick } from './function-call-on-button-click/function-call-on-button-click';
@@ -25,7 +25,9 @@ import { SignalsTemplate } from "./signals-template/signals-template";
 // import { SwitchCase } from "./switch-case/switch-case";
 // import { AngularLoops } from "./angular-loops/angular-loops";
 // import { AngularLoopContextualVars } from "./angular-loop-contextual-vars/angular-loop-contextual-vars";
-
+// import { InputSignal } from "./input-signal/input-signal";
+// import { Counter } from './core/store/counter';
+// import { UserStore } from './core/store/UserStore';
 
 @Component({
   selector: 'app-root',
@@ -33,8 +35,8 @@ import { SignalsTemplate } from "./signals-template/signals-template";
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
-  // imports: [RouterOutlet,TwoWayBinding,TodoAap],
-  imports: [RouterOutlet, SignalsTemplate],
+  // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -43,4 +45,16 @@ import { SignalsTemplate } from "./signals-template/signals-template";
 
 export class App {
   protected readonly title = signal('angular-learn-dev');
+
+  // constructor(public counterStore : Counter){}
+
+  // reset () {
+  //   this.counterStore.count.set(0)
+  // }
+
+
+
+  
+
+  
 }
