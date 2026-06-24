@@ -1,5 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Card } from "./card/card";
+import { Button } from "./button/button";
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormField } from "./form-field/form-field";
 // import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
 // import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
 // import { AngularEffect } from "./angular-effect/angular-effect";
@@ -36,7 +40,8 @@ import { RouterOutlet } from '@angular/router';
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
   // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
-  imports: [RouterOutlet],
+  // imports: [Card, Button],
+  imports: [RouterOutlet, FormField],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -45,16 +50,28 @@ import { RouterOutlet } from '@angular/router';
 
 export class App {
   protected readonly title = signal('angular-learn-dev');
+  
+  
+  form = new FormGroup({
+    name:new FormControl('', Validators.required),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email
+    ]),
+  });
 
+  submit(){
+    console.log(this.form.value)
+  }
+  
+  
+  // message = ""
+  // saveData(msg:string) {
+  //   console.log(this.message)
+  //   this.message = msg
+  // }
   // constructor(public counterStore : Counter){}
-
   // reset () {
   //   this.counterStore.count.set(0)
   // }
-
-
-
-  
-
-  
 }

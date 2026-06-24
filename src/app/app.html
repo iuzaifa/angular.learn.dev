@@ -33,3 +33,31 @@
 <button (click)="reset()">reset</button> -->
 
 <!-- <h2>Application</h2> -->
+<!-- <app-card [title]="'Learn Angular Dev.?'" [description]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, mollitia blanditiis sapiente sequi tenetur ex magni? Nihil amet architecto quaerat totam ratione, reprehenderit, enim illum praesentium hic dolores exercitationem aut?'">
+</app-card> -->
+
+<!-- <app-button [lable]="'Save'" (clicked)="saveData($event)">
+
+</app-button> -->
+
+<!-- <app-form-field> -->
+<form (ngSubmit)="submit()">
+
+  <app-form-field
+    label="Name"
+    placeholder="Enter Name"
+    [control]="form.controls.name">
+  </app-form-field>
+
+  <app-form-field
+    label="Email"
+    type="email"
+    placeholder="Enter Email"
+    [control]="form.controls.email">
+  </app-form-field>
+
+  <button type="submit">
+    Submit
+  </button>
+
+</form>

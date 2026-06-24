@@ -1,0 +1,12 @@
+<p>form-field works!</p>
+
+<div class="mb-3">
+    <label for="">{{label()}}</label>
+    <input class="form-control" type="{{type()}}" placeholder="{{placeholder()}}" [formControl]="control()">
+
+    @if (control().invalid && control().touched) {
+        <small class="text-danger">
+            This field is required
+        </small>
+    }
+</div>
