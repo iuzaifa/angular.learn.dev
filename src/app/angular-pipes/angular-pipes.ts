@@ -1,12 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { StringLengthPipe } from '../pipes/string-length-pipe';
-import { ShortNamePipe } from '../pipes/short-name-pipe';
-import { CurencyConvertPipe } from '../pipes/curency-convert-pipe';
 
 @Component({
   selector: 'app-angular-pipes',
-  imports: [CommonModule, StringLengthPipe, ShortNamePipe, CurencyConvertPipe],
+  imports: [CommonModule],
   templateUrl: './angular-pipes.html',
   styleUrl: './angular-pipes.css',
 })

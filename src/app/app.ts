@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Card } from "./card/card";
-import { Button } from "./button/button";
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { FormField } from "./form-field/form-field";
+// import { Card } from "./card/card";
+// import { Button } from "./button/button";
+// import { FormControl, FormGroup, Validators } from '@angular/forms';
+// import { FormField } from "./form-field/form-field";
 // import { SignalDatatypes } from "./signal-datatypes/signal-datatypes";
 // import { AngularComputedSignals } from "./angular-computed-signals/angular-computed-signals";
 // import { AngularEffect } from "./angular-effect/angular-effect";
@@ -35,13 +35,13 @@ import { FormField } from "./form-field/form-field";
 
 @Component({
   selector: 'app-root',
-  // imports: [RouterOutlet, InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
+  // imports: [RouterOutlet, RouterLinkWithHref InterpolationComponent, Login, Signin, PropertyBind , EventBinding, FunctionCallOnButtonClick],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle, ElseIfFlow],
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
   // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
-  // imports: [Card, Button],
-  imports: [RouterOutlet, FormField],
+  // imports: [Card, Button, FormField],
+  imports: [RouterOutlet ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -52,17 +52,7 @@ export class App {
   protected readonly title = signal('angular-learn-dev');
   
   
-  form = new FormGroup({
-    name:new FormControl('', Validators.required),
-    email: new FormControl('', [
-      Validators.required,
-      Validators.email
-    ]),
-  });
 
-  submit(){
-    console.log(this.form.value)
-  }
   
   
   // message = ""
@@ -73,5 +63,16 @@ export class App {
   // constructor(public counterStore : Counter){}
   // reset () {
   //   this.counterStore.count.set(0)
+  // }
+   // form = new FormGroup({
+  //   name:new FormControl('', Validators.required),
+  //   email: new FormControl('', [
+  //     Validators.required,
+  //     Validators.email
+  //   ]),
+  // });
+
+  // submit(){
+  //   console.log(this.form.value)
   // }
 }
