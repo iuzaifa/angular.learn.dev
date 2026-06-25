@@ -40,8 +40,8 @@ import { FormField } from "./form-field/form-field";
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
   // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
-  // imports: [Card, Button],
-  imports: [RouterOutlet, FormField],
+  // imports: [Card, Button FormField],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
