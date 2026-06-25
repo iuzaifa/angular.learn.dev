@@ -40,13 +40,8 @@ import { RouterOutlet } from '@angular/router';
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
   // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
-<<<<<<< HEAD
   // imports: [Card, Button FormField],
   imports: [RouterOutlet],
-=======
-  // imports: [Card, Button, FormField],
-  imports: [RouterOutlet ],
->>>>>>> topic/agnular-all
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
