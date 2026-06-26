@@ -1,5 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LazyLoading } from "./lazy-loading/lazy-loading";
+import { Header } from "./app-header/header/header";
+import { Footer } from "./app-header/footer/footer";
 // import { Card } from "./card/card";
 // import { Button } from "./button/button";
 // import { FormControl, FormGroup, Validators } from '@angular/forms';
@@ -40,7 +43,7 @@ import { RouterOutlet } from '@angular/router';
   // imports: [RouterOutlet, DataTypes, EventsDemo CounterApp, GetSetValue, AngularStyling, IfElseFlowHideShowToggle ,ElseIfFlow],
   // imports: [RouterOutlet, SwitchCase, AngularPipes ,AngularLoops, AngularLoopContextualVars, AngularSignals, SignalDatatypes,AngularComputedSignals, AngularEffect],
   // imports: [RouterOutlet,TwoWayBinding,TodoAap, SignalsTemplate,InputSignal],
-  // imports: [Card, Button FormField],
+  // imports: [Card, Button FormField , Header, Footer],
   imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'

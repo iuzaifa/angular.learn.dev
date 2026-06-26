@@ -1,0 +1,38 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.header h3 {
+    color: white;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header ul li a {
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.header ul li a:hover {
+    color: orange;
+}
+
+.active {
+    color: orange !important;
+    font-weight: bold;
+}
